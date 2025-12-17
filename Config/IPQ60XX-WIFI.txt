@@ -16,6 +16,13 @@ CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_redmi_ax5=y
 CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_xiaomi_ax1800=y
 CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_zn_m2=y
 
+#---------------以下自编译插入插件及组件----------------#
+#关机poweroff-------（在GENERAL.TXT中启用“=y”）
+#CONFIG_PACKAGE_luci-app-poweroff=y
+#分区扩容------------（在GENERAL.TXT中启用“=y”）
+#CONFIG_PACKAGE_luci-app-partexp=y
+#---------------以上为自行增加的插件及组件----------------#
+
 #内核配置
 CONFIG_KERNEL_ARM_PMU=y
 CONFIG_KERNEL_CFQ_GROUP_IOSCHED=y
@@ -40,4 +47,5 @@ CONFIG_ATH11K_MEM_PROFILE_1G=n
 CONFIG_ATH11K_MEM_PROFILE_512M=y
 
 CONFIG_PACKAGE_sqm-scripts-nss=y
+
 CONFIG_PACKAGE_kmod-qca-nss-crypto=y
