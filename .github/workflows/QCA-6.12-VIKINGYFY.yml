@@ -67,8 +67,4 @@ jobs:
       WRT_TEST: ${{inputs.TEST}}
 
       CI_NAME: ${{github.workflow}}
-steps:
-      - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: '^1.25.3'
+
